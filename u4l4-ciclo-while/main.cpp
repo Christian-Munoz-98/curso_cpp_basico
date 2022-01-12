@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-    char respuesta = 'o';
+    char respuesta = 'y';
     int i=0;
 
-    while(respuesta!='y'&&respuesta!='Y')
+    do
     {
         cout << i << endl;
         i++;
@@ -15,6 +15,6 @@ int main()
         cout << "Desea terminar el programa?: ";
         cin >> respuesta;
     }
-
+    while(respuesta!='y'&&respuesta!='Y');
     cout << "Bye Bye";
 }
