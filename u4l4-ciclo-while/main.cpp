@@ -6,8 +6,8 @@ int main()
 {
     char respuesta = 'n';
     int i=0;
-
-    while(true)
+    
+    do
     {
         cout << i << endl;
         i++;
@@ -21,4 +21,5 @@ int main()
             break;
         }
     }
+    while(true);
 }
