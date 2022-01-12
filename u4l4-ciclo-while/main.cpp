@@ -5,16 +5,16 @@ using namespace std;
 int main()
 {
     char respuesta = 'o';
-    for(int i=0;i<10000;i++)
+    int i=0;
+
+    while(respuesta!='y'&&respuesta!='Y')
     {
         cout << i << endl;
+        i++;
+
         cout << "Desea terminar el programa?: ";
         cin >> respuesta;
-
-        if(respuesta == 'y')
-        {
-            cout << "Bye Bye";
-            break;
-        }
     }
+
+    cout << "Bye Bye";
 }
