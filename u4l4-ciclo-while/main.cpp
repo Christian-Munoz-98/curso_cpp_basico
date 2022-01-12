@@ -4,17 +4,21 @@ using namespace std;
 
 int main()
 {
-    char respuesta = 'y';
+    char respuesta = 'n';
     int i=0;
 
-    do
+    while(true)
     {
         cout << i << endl;
         i++;
 
-        cout << "Desea terminar el programa?: ";
+        cout << "Desea terminar?: ";
         cin >> respuesta;
+
+        if(respuesta=='y' || respuesta=='Y')
+        {
+            cout << "Bye Bye";
+            break;
+        }
     }
-    while(respuesta!='y'&&respuesta!='Y');
-    cout << "Bye Bye";
 }
