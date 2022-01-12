@@ -5,14 +5,12 @@ using namespace std;
 
 int main()
 {
-    int limite;
+    int lista[]={100,200,300,400,500,1000,3500,76,32,76,12};
+    int limite = sizeof(lista)/sizeof(lista[0]);
 
-    cout << "Ingresa el limite: ";
-    cin >> limite;
-
-    for (int i = 1; i <= limite ; i++)
+    for (int i = 0; i < limite ; i++)
     {
-        cout << "Hola No." << i << endl;
+        cout << lista[i]*2 << endl;
     }
     
 }
