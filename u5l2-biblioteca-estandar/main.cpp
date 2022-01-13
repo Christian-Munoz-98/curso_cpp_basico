@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-    string texto = "Hola mundo";
-    cout << texto.size();
+    string texto = "100";
+    cout << stoi(texto)*3;
 }
